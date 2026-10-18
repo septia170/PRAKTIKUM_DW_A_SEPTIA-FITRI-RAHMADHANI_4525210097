@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff7f4">
+    <title>SweetCup | Café & Resto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header" id="beranda">
+        <a href="#beranda" class="logo">
+            <span class="logo-icon">☕</span>
+            <span>SweetCup<small>Café & Resto ♡</small></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+
+        <nav class="navbar" id="navbar">
+            <a href="#beranda">Beranda</a>
+            <a href="#menu">Menu</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+        <a href="#menu" class="header-order">♡ Pesan Sekarang</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">♡ YOUR DAILY DOSE OF HAPPINESS ♡</span>
+                <h1>Tempat Nongkrong<br>
+                    <em>Paling Cozy</em> ♡</h1>
+                <p>Nikmati kopi terbaik, dessert manis, dan suasana hangat untuk menemani cerita indahmu.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Jelajahi Menu ↗</a>
+                    <a href="#tentang" class="btn btn-outline">Cerita Kami</a>
+                </div>
+                <div class="hero-note">
+                    <span>✿</span>
+                    Dibuat dengan cinta, disajikan dengan bahagia.
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1100&q=85"
+                    alt="Interior kafe hangat dengan meja dan kursi kayu">
+                <div class="floating-note">
+                    <span>♡</span>
+                    <div><strong>Little moments</strong><small>Big happiness!</small></div>
+                </div>
+                <div class="hero-sticker">made with<br>♡ love ♡</div>
+            </div>
+            <span class="decoration decor-one">✿</span>
+            <span class="decoration decor-two">♡</span>
+        </section>
+
+        <section class="features">
+            <article class="feature">
+                <span class="feature-icon">☕</span>
+                <h3>Kopi Berkualitas</h3>
+                <p>Dari biji kopi pilihan terbaik.</p>
+            </article>
+            <article class="feature">
+                <span class="feature-icon">♡</span>
+                <h3>Dibuat dengan Cinta</h3>
+                <p>Setiap sajian punya cerita.</p>
+            </article>
+            <article class="feature">
+                <span class="feature-icon">✿</span>
+                <h3>Tempat Nyaman</h3>
+                <p>Cocok untuk cerita dan bersantai.</p>
+            </article>
+            <article class="feature">
+                <span class="feature-icon">☼</span>
+                <h3>Sweet Moments</h3>
+                <p>Temukan bahagia di setiap tegukan.</p>
+            </article>
+        </section>
+
+        <section class="menu-section section-padding" id="menu">
+            <div class="section-heading">
+                <span class="eyebrow">A LITTLE TREAT FOR YOU ♡</span>
+                <h2>Menu <em>Favorit</em> Kami</h2>
+                <p>Pilihan spesial untuk membuat harimu lebih manis.</p>
+            </div>
+
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Semua Menu</button>
+                <button class="filter-btn" data-filter="coffee">Coffee</button>
+                <button class="filter-btn" data-filter="noncoffee">Non-Coffee</button>
+                <button class="filter-btn" data-filter="dessert">Dessert</button>
+            </div>
+
+            <div class="menu-grid">
+                <article class="menu-card" data-category="coffee">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=650&q=80" alt="Caffè latte">
+                        <span class="menu-tag">Bestseller ♡</span>
+                    </div>
+                    <div class="menu-info">
+                        <div><h3>Pink Latte</h3><p>Espresso creamy dengan sentuhan manis.</p></div>
+                        <div class="menu-bottom"><strong>Rp 25.000</strong><button class="add-cart" data-name="Pink Latte" data-price="25000" aria-label="Tambah Pink Latte">+</button></div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="dessert">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=650&q=80" alt="Strawberry dessert">
+                        <span class="menu-tag">Sweet Pick</span>
+                    </div>
+                    <div class="menu-info">
+                        <div><h3>Strawberry Cake</h3><p>Kue lembut dengan stroberi segar.</p></div>
+                        <div class="menu-bottom"><strong>Rp 28.000</strong><button class="add-cart" data-name="Strawberry Cake" data-price="28000" aria-label="Tambah Strawberry Cake">+</button></div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="dessert">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=650&q=80" alt="Croissant fresh">
+                    </div>
+                    <div class="menu-info">
+                        <div><h3>Butter Croissant</h3><p>Pastry renyah dengan aroma mentega.</p></div>
+                        <div class="menu-bottom"><strong>Rp 18.000</strong><button class="add-cart" data-name="Butter Croissant" data-price="18000" aria-label="Tambah Butter Croissant">+</button></div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="noncoffee">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=650&q=80" alt="Es kopi dalam gelas">
+                    </div>
+                    <div class="menu-info">
+                        <div><h3>Vanilla Cloud</h3><p>Minuman creamy yang lembut dan segar.</p></div>
+                        <div class="menu-bottom"><strong>Rp 22.000</strong><button class="add-cart" data-name="Vanilla Cloud" data-price="22000" aria-label="Tambah Vanilla Cloud">+</button></div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="coffee">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=650&q=80" alt="Kopi hangat">
+                    </div>
+                    <div class="menu-info">
+                        <div><h3>Caramel Latte</h3><p>Kopi susu dengan manisnya karamel.</p></div>
+                        <div class="menu-bottom"><strong>Rp 27.000</strong><button class="add-cart" data-name="Caramel Latte" data-price="27000" aria-label="Tambah Caramel Latte">+</button></div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="dessert">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=650&q=80" alt="Chocolate cake">
+                    </div>
+                    <div class="menu-info">
+                        <div><h3>Chocolate Cake</h3><p>Cokelat rich untuk pencinta dessert.</p></div>
+                        <div class="menu-bottom"><strong>Rp 30.000</strong><button class="add-cart" data-name="Chocolate Cake" data-price="30000" aria-label="Tambah Chocolate Cake">+</button></div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart-summary" aria-live="polite">
+                <span>♡ Keranjang: <strong id="cartCount">0</strong> item</span>
+                <span>Total: <strong id="cartTotal">Rp 0</strong></span>
+                <button class="btn btn-primary" id="orderButton">Lihat Pesanan ↗</button>
+            </div>
+        </section>
+
+        <section class="about-section section-padding" id="tentang">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=85" alt="Kopi yang disiapkan barista">
+                <div class="about-badge">A cozy place<br>for your soul ♡</div>
+            </div>
+            <div class="about-content">
+                <span class="eyebrow">OUR LITTLE STORY ✿</span>
+                <h2>Tentang <em>SweetCup</em></h2>
+                <p>SweetCup lahir dari kecintaan pada kopi, dessert, dan momen sederhana yang membuat hidup terasa lebih indah.</p>
+                <p>Kami percaya secangkir kopi bukan hanya tentang rasa, tetapi juga tentang cerita, tawa, dan waktu berkualitas bersama orang tersayang.</p>
+                <div class="about-stat">
+                    <div><strong>100%</strong><small>Made with love</small></div>
+                    <div><strong>Fresh</strong><small>Every single day</small></div>
+                    <div><strong>Cozy</strong><small>Just for you</small></div>
+                </div>
+                <a href="#galeri" class="btn btn-primary">Kenali Kami ♡</a>
+            </div>
+        </section>
+
+        <section class="gallery-section section-padding" id="galeri">
+            <div class="section-heading">
+                <span class="eyebrow">LITTLE CORNERS OF HAPPINESS</span>
+                <h2>Sweet <em>Gallery</em> ♡</h2>
+                <p>Sudut kecil untuk menikmati hal-hal sederhana.</p>
+            </div>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=700&q=80" alt="Suasana interior kafe">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80" alt="Kopi dan biji kopi">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=80" alt="Sudut nyaman sebuah kafe">
+                <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?auto=format&fit=crop&w=700&q=80" alt="Meja dan kursi kafe">
+            </div>
+        </section>
+
+        <section class="contact-section section-padding" id="kontak">
+            <div class="contact-card">
+                <span class="eyebrow">LET'S HAVE A SWEET DAY ♡</span>
+                <h2>Temui Kami <em>di Sini</em></h2>
+                <p>Datang untuk kopi, tinggal untuk suasananya.</p>
+                <div class="contact-details">
+                    <p>♡ <strong>Alamat:</strong> Jl. Bunga Sakura No. 10</p>
+                    <p>♡ <strong>Jam buka:</strong> Setiap hari, 09.00–22.00</p>
+                    <p>♡ <strong>Instagram:</strong> @sweetcup.cafe</p>
+                </div>
+                <a href="#menu" class="btn btn-primary">Pilih Menu Favorit ↗</a>
+                <p class="small-note">Informasi alamat dan akun di atas merupakan contoh untuk proyek.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#beranda" class="logo footer-logo">
+            <span class="logo-icon">☕</span>
+            <span>SweetCup<small>Café & Resto ♡</small></span>
+        </a>
+        <p>Made with ♡, coffee and a little bit of magic.</p>
+        <div class="footer-links">
+            <a href="#beranda">Beranda</a>
+            <a href="#menu">Menu</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+        <small>© 2026 SweetCup Café. All rights reserved.</small>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
