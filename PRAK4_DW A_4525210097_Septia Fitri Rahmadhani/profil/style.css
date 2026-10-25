@@ -1,0 +1,238 @@
+/* Pengaturan dasar dan Box Model */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header dan navigasi */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #244b7a;
+    color: #ffffff;
+    padding: 15px 6%;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Bagian hero */
+.hero {
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #e7efff, #ffffff);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.eyebrow {
+    color: #244b7a;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.hero h2 {
+    margin: 10px 0;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+/* Class reusable */
+.section-shell {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.button {
+    display: inline-block;
+    background-color: #3666a3;
+    color: #ffffff;
+    padding: 10px 22px;
+    border: 2px solid #3666a3;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+    transform: translateY(-2px);
+}
+
+/* Bagian konten */
+.content {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #ffffff;
+    border: 1px solid #e0e6ef;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.content h2 {
+    margin-top: 0;
+    color: #244b7a;
+}
+
+/* Kartu proyek */
+.project-container {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #dce4ef;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #3666a3;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #244b7a;
+    border-top: 2px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Tombol kembali ke atas */
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5;
+}
+
+/* Tampilan layar di bawah 768px */
+@media screen and (max-width: 767px) {
+    html {
+        scroll-padding-top: 140px;
+    }
+
+    .header {
+        padding: 14px 5%;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header h1 {
+        font-size: 21px;
+    }
+
+    .navigation {
+        gap: 14px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    .section-shell {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .content {
+        margin: 16px 5%;
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .card {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .back-to-top {
+        right: 12px;
+        bottom: 12px;
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}
