@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURSELY - Form Pendaftaran Kursus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">COURSELY<span>.</span></div>
+        <p>Temukan kemampuan baru dan kembangkan potensimu.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+            <span class="tag">FORM PENDAFTARAN</span>
+            <h1>Mulai Perjalanan<br>Belajarmu Sekarang!</h1>
+            <p>
+                Isi formulir berikut untuk mendaftarkan diri pada program
+                kursus yang kamu inginkan.
+            </p>
+            <div class="info">
+                <div>✓ Pilihan kelas beragam</div>
+                <div>✓ Jadwal belajar fleksibel</div>
+                <div>✓ Proses pendaftaran mudah</div>
+            </div>
+        </section>
+
+        <section class="form-card">
+            <h2>Formulir Pendaftaran</h2>
+            <p class="subtitle">Lengkapi data diri kamu dengan benar.</p>
+
+            <form id="formPendaftaran" novalidate>
+
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+                    <small id="errorNama"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="text" id="email" placeholder="contoh@email.com">
+                    <small id="errorEmail"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon</label>
+                    <input type="text" id="telepon" placeholder="08xxxxxxxxxx">
+                    <small id="errorTelepon"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="option-group">
+                        <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+                        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                    </div>
+                    <small id="errorGender"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="kursus">Pilih Program Kursus</label>
+                    <select id="kursus">
+                        <option value="">-- Pilih Program --</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Data Analysis">Data Analysis</option>
+                    </select>
+                    <small id="errorKursus"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Jadwal Kursus</label>
+                    <div class="option-group">
+                        <label><input type="radio" name="jadwal" value="Pagi"> Pagi</label>
+                        <label><input type="radio" name="jadwal" value="Siang"> Siang</label>
+                        <label><input type="radio" name="jadwal" value="Malam"> Malam</label>
+                    </div>
+                    <small id="errorJadwal"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Metode Pembelajaran</label>
+                    <div class="option-group">
+                        <label><input type="checkbox" name="metode" value="Online"> Online</label>
+                        <label><input type="checkbox" name="metode" value="Offline"> Offline</label>
+                    </div>
+                    <small id="errorMetode"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="alasan">Alasan Mengikuti Kursus</label>
+                    <textarea id="alasan" rows="4"
+                        placeholder="Ceritakan alasan kamu mengikuti kursus ini"></textarea>
+                    <small id="errorAlasan"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="bukti">Upload Bukti Pembayaran</label>
+                    <input type="file" id="bukti" accept=".jpg,.jpeg,.png,.pdf">
+                    <small>Format JPG, PNG, atau PDF. Maksimal 2 MB.</small>
+                    <small id="errorBukti"></small>
+                </div>
+
+                <div class="form-group">
+                    <label class="agreement">
+                        <input type="checkbox" id="persetujuan">
+                        Saya menyetujui ketentuan pendaftaran.
+                    </label>
+                    <small id="errorPersetujuan"></small>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="check-btn" id="cekBtn">
+                        Periksa Form
+                    </button>
+
+                    <button type="reset" class="reset-btn">
+                        Reset
+                    </button>
+
+                    <button type="submit" class="submit-btn">
+                        Daftar Sekarang
+                    </button>
+                </div>
+
+                <div id="hasil"></div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 COURSELY. Form Pendaftaran Kursus.
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
